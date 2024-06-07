@@ -1,0 +1,76 @@
+@font-face {
+    font-family: mainFont;
+    src: url("VeraMono.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100vw;
+    min-height: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 5vw;
+
+    font-family: "mainFont";
+    font-size: 1vw;
+
+    background-color: rgb(100, 100, 100);
+}
+
+.nav_logo {
+
+    display: flex;
+    flex-direction: column;
+    align-self:flex-start;
+
+    width: 6vw;
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    /* Change this later */    
+    border-radius: 64px;
+}
+
+.nav_link {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    /*margin-top: 2.5%;*/
+    /*margin-bottom: 2.5%;*/
+
+    text-decoration: none;
+    color: #4693e9;
+
+    font-size: 2vw;
+    padding: 2vw;
+
+
+    /* Animation Settings */
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+
+.nav_link:hover{
+    color: #96bae3;
+    background-color: rgb(90, 90, 90);
+}
